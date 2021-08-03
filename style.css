@@ -53,6 +53,7 @@ button {
     border-radius: 10px;
     font-size: 1.4rem;
     font-family: 'Oswald', sans-serif;
+    transition:1s;
 }
 
 button:hover {
@@ -60,9 +61,10 @@ button:hover {
     background: var(--colorcheck);
     width: 42vw;
     height: 12vh;
+    transition: 1s;
 }
 
-#background h1 a:hover {
+#background h1{
     color: white;
     background: black;
 }
