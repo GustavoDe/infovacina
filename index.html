@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="popup.css">
+    <link rel="stylesheet" href="info-user.css">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
@@ -38,8 +39,9 @@
         <div id="introduction">
             <h2>Quais são as vacinas que estão sendo oferecidas no Brasil?</h2>
             <p>
-                Quatro vacinas atualmente foram autorizadas pela 
-                <b>Agência Nacional de Vigilância Sanitária(ANVISA)</b> para <br>uso no Brasil.<br>Importante Ressaltar que todas
+                Quatro vacinas atualmente foram autorizadas pela
+                <b>Agência Nacional de Vigilância Sanitária(ANVISA)</b> para <br>uso no Brasil.<br>Importante Ressaltar
+                que todas
                 as citadas abaixo são de combate ao novo Corona Vírus.<br>
                 <img src="img/icon_info.svg" alt="info">É importante ser imunizado
                 independente da vacina. <br>As vacinas disponíveis são <b>AstraZeneca,
@@ -59,9 +61,9 @@
                 </p>
                 <h3>Eficácia</h3>
                 <p>
-                Um estudo recente, encaminhado pelo Butantan à revista científica The Lancet,
-                no entanto, estimou a eficácia global de 62,3% para casos leves,
-                moderados ou graves se o intervalo entre doses for de 21 dias ou mais.
+                    Um estudo recente, encaminhado pelo Butantan à revista científica The Lancet,
+                    no entanto, estimou a eficácia global de 62,3% para casos leves,
+                    moderados ou graves se o intervalo entre doses for de 21 dias ou mais.
                 </p>
             </div>
             <button id="abrir" onclick="togglePopup()">CoronaVac</button>
@@ -77,8 +79,10 @@
                 </p>
                 <h3>Eficácia</h3>
                 <p>
-                    A vacina AstraZeneca contra a COVID-19 tem uma eficácia de 63,09% contra a infeção sintomática pelo SARS-CoV-2.
-                    Intervalos mais longos entre as doses, com limites de 8 a 12 semanas, estão associados a uma maior eficácia da vacina.
+                    A vacina AstraZeneca contra a COVID-19 tem uma eficácia de 63,09% contra a infeção sintomática pelo
+                    SARS-CoV-2.
+                    Intervalos mais longos entre as doses, com limites de 8 a 12 semanas, estão associados a uma maior
+                    eficácia da vacina.
                 </p>
             </div>
             <button id="abrir" onclick="togglePopup2()">AstraZeneca</button>
@@ -90,13 +94,17 @@
                 <div class="close-btn" onclick="togglePopup3()">×</div>
                 <h1>Pfizer</h1>
                 <p>
-                    A vacina Pfizer é desenvolvida e fabricada por 3 organizações sendo elas  <b>BioNTech, Fosun Pharma, Pfizer</b>.
-                    Está demonstrado que a vacina é segura e eficaz em pessoas com várias patologias associadas a maior risco de doença grave.
-                    Entre elas contam-se a hipertensão, diabetes, asma, doença pulmonar, doença hepática ou renal, assim como infeções crónicas que estejam estáveis e controladas.
+                    A vacina Pfizer é desenvolvida e fabricada por 3 organizações sendo elas <b>BioNTech, Fosun Pharma,
+                        Pfizer</b>.
+                    Está demonstrado que a vacina é segura e eficaz em pessoas com várias patologias associadas a maior
+                    risco de doença grave.
+                    Entre elas contam-se a hipertensão, diabetes, asma, doença pulmonar, doença hepática ou renal, assim
+                    como infeções crónicas que estejam estáveis e controladas.
                 </p>
                 <h3>Eficácia</h3>
                 <p>
-                    A vacina da Pfizer BioNTech contra a COVID-19 tem uma eficácia de 95% contra a infeção sintomática por SARS-CoV-2.
+                    A vacina da Pfizer BioNTech contra a COVID-19 tem uma eficácia de 95% contra a infeção sintomática
+                    por SARS-CoV-2.
                 </p>
             </div>
             <button id="abrir" onclick="togglePopup3()">Pfizer</button>
@@ -108,17 +116,33 @@
                 <div class="close-btn" onclick="togglePopup4()">×</div>
                 <h1>Janssen</h1>
                 <p>
-                    Essa vacina é a mais desejada por ser aplicada em dose única, ela é desenvolvida pela <b>Janssen Farmacêutica</b>.
+                    Essa vacina é a mais desejada por ser aplicada em dose única, ela é desenvolvida pela <b>Janssen
+                        Farmacêutica</b>.
                 </p>
                 <h3>Eficácia</h3>
                 <p>
-                    De acordo com os estudos clínicos publicados pela Janssen sobre a vacina Ad26.COV2.S, verificou-se a eficácia global de 
+                    De acordo com os estudos clínicos publicados pela Janssen sobre a vacina Ad26.COV2.S, verificou-se a
+                    eficácia global de
                     66,9% na prevenção contra a COVID-19, após 14 dias da aplicação do imunizante
                 </p>
             </div>
             <button id="abrir" onclick="togglePopup4()">Janssen</button>
         </div>
     </section>
+    <footer>
+        <div id="info-user">
+            <h2>Responda os campos abaixo</h2>
+            <p>Os campos abaixo são de extrema importância, não deixe campos em branco</p>
+            <p>consulte sua data para se vacinar</p>
+            <form name="registration" id="registration">
+                <label for="name">Nome</label>
+                <input type="text" name="fullname" id="fullname" placeholder="Insira seu nome completo">
+                <label for="age">Idade</label>
+                <input type="number" name="age" id="age" placeholder="Insira sua idade">
+                </form>
+                <button type="submit" onclick="submit()">Consultar</button>
+        </div>
+    </footer>
 
 </body>
 

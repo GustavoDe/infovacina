@@ -1,0 +1,56 @@
+
+
+#info-user {
+    width: 100vw;
+    height: 100vh;
+    background: var(--background);
+    color: var(--colortext);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#info-user h2 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 2rem;
+    color: white;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+#info-user p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.4rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+label {
+    font-family: 'Poppins', sans-serif;
+    display: none;
+}
+
+input {
+    width: 15rem;
+    height: 1rem;
+    padding: 10px;
+    border-radius: 20px;
+    border: 2px solid var(--colortext);
+    box-shadow: 0 0 0 0;
+    outline: 0;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+input:hover {
+    border: 2px solid var(--colorcheck);
+    height: 1.5rem;
+    width:17rem;
+    transition: 1s;
+}
+input:focus {
+    border: 2px solid var(--colorcheck);
+    height: 1.5rem;
+    width:17rem;
+    transition: 1s;
+}
